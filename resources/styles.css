@@ -32,7 +32,7 @@ body {
     padding: 2.5rem;
     background-image: url(./images/background-header-mobile.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-color: var(--gray-lighter);
 }
 
@@ -126,4 +126,79 @@ body {
     font-size: 1rem;
     font-family: var(--lato);
     font-weight: 400;
+}
+
+.main-program-home {
+    background-color: var(--gray-dark);
+    margin: 2rem -2.5rem 0 -2.5rem;
+    text-align: center;
+    padding: 2.5rem 2.5rem 0 2.5rem ;
+    background-image: url(icons/mycollection/blockchain.svg);
+    background-size: 2.5rem;
+}
+
+.title-main-program-home {
+    font-family: var(--coco-regular);
+    font-weight: 200;
+    color: white;
+    font-size: 2rem;
+}
+
+.main-program-home hr {
+    color: var(--orange);
+    width: 4rem;
+    height: .3rem;
+    margin: 0 auto;
+    border-color: var(--orange);
+    background-color: var(--orange);
+    border-radius: 20%;
+}
+
+.programs-main-program-home {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: left;
+    margin-top: 2rem;
+    gap: 1.5rem;
+}
+
+.programs-main-program-home li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7.5rem;
+    padding: .3rem .6rem;
+    background-color: #d3d3d31c;
+}
+
+.programs-main-program-home li i {
+    font-size: 4.5rem;
+    color: white;
+}
+
+.programs-main-program-home li h3 {
+    font-family: var(--coco-regular);
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--orange);
+}
+
+.programs-main-program-home li p {
+    font-family: var(--lato);
+    font-size: 1.2rem;
+    width: 13.4rem;
+    font-weight: 200;
+    color: white;
+}
+
+.btn-main-program-home {
+    background-color: var(--orange);
+    color: white;
+    font-family: var(--lato);
+    font-size: 1.6rem;
+    font-weight: bold;
+    border: none;
+    margin: 2rem auto;
+    padding: 1.5rem 1rem;
 }
