@@ -1,0 +1,61 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?a9c1243d48e24e36e238a80ef2a4de1b") format("truetype"),
+url("./flaticon.woff?a9c1243d48e24e36e238a80ef2a4de1b") format("woff"),
+url("./flaticon.woff2?a9c1243d48e24e36e238a80ef2a4de1b") format("woff2"),
+url("./flaticon.eot?a9c1243d48e24e36e238a80ef2a4de1b#iefix") format("embedded-opentype"),
+url("./flaticon.svg?a9c1243d48e24e36e238a80ef2a4de1b#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "presentation": "\f101",
+    "puzzle": "\f102",
+    "network": "\f103",
+    "lecture": "\f104",
+    "chat": "\f105",
+    "twitter": "\f106",
+    "facebook-app-symbol": "\f107",
+    "menu": "\f108",
+    "close": "\f109",
+);
+
+.flaticon-presentation:before {
+    content: map-get($flaticon-map, "presentation");
+}
+.flaticon-puzzle:before {
+    content: map-get($flaticon-map, "puzzle");
+}
+.flaticon-network:before {
+    content: map-get($flaticon-map, "network");
+}
+.flaticon-lecture:before {
+    content: map-get($flaticon-map, "lecture");
+}
+.flaticon-chat:before {
+    content: map-get($flaticon-map, "chat");
+}
+.flaticon-twitter:before {
+    content: map-get($flaticon-map, "twitter");
+}
+.flaticon-facebook-app-symbol:before {
+    content: map-get($flaticon-map, "facebook-app-symbol");
+}
+.flaticon-menu:before {
+    content: map-get($flaticon-map, "menu");
+}
+.flaticon-close:before {
+    content: map-get($flaticon-map, "close");
+}
