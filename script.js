@@ -20,7 +20,7 @@ function makeNotScrollable() {
 const btnMenu = document.querySelector(".button-menu");
 btnMenu.addEventListener("click", () => {
   const btnIcon = document.getElementById("button-icon");
-  const menuOptions = document.querySelector(".menu");
+  const menuOptions = document.querySelector(".topnav");
   if (btnIcon.matches(".flaticon-menu")) {
     menuOptions.id = "visible";
     btnIcon.classList.add("flaticon-close");

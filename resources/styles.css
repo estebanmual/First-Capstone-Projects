@@ -32,37 +32,55 @@ body {
     padding: 2.5rem;
     background-image: url(./images/background-header-mobile.svg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% auto;
     background-color: var(--gray-lighter);
 }
 
 .button-menu {
+    position: fixed;
     background: none;
     border: none;
+    z-index: 2;
 }
 
-.flaticon-menu,
-.flaticon-close {
+.flaticon-menu {
     font-size: 4rem;
 }
 
-.menu {
+.flaticon-close {
+    font-size: 3rem;
+}
+
+.topnav {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    margin: 0 0;
+    padding: auto auto;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: var(--orange);
     display: none;
-    background: var(--orange);
-    position: absolute;
-    margin : 0 -2.5rem 0 -2.5rem;
-    width: 35%;
+}
+
+.menu {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .menu li {
-    text-align: right;
+    text-align: center;
     padding: .5rem;
     list-style: none;
 }
 
 .menu a {
     font-family: var(--lato);
-    color: var(--gray-dark);
+    color: white;
     text-decoration: none;
     font-size: 2.5rem;
     font-weight: 800;
@@ -87,6 +105,10 @@ body {
     color: var(--orange);
     font-size: 2rem;
     font-weight: 400;
+}
+
+.header-home {
+    margin-top: 6rem;
 }
 
 .title-header-home {
@@ -201,4 +223,68 @@ body {
     border: none;
     margin: 2rem auto;
     padding: 1.5rem 1rem;
+}
+
+.featured-speakers {
+    margin: 0 -2.5rem 2.5rem -2.5rem;
+    text-align: center;
+    padding: 2.5rem 2.5rem 0 2.5rem ;
+    background-color: white;
+}
+
+.title-featured-speakers {
+    font-family: var(--coco-regular);
+    font-weight: 200;
+    color: var(--gray-dark);
+    font-size: 2rem;
+}
+
+.featured-speakers > hr {
+    color: var(--orange);
+    width: 4rem;
+    height: .3rem;
+    margin: 0 auto;
+    border-color: var(--orange);
+    background-color: var(--orange);
+    border-radius: 20%;
+}
+
+.speakers-list {
+    margin-bottom: 2.5rem;
+}
+
+.speakers-list li {
+    display: flex;
+    margin: 3rem 0
+}
+
+.speakers-information {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    text-align: left;
+    justify-content: space-evenly;
+}
+
+.speakers-information h3 {
+    font-family: var(--coco-regular);
+    font-weight: 100;
+    font-size: 1.3rem;
+}
+
+.speakers-information p {
+    font-family: var(--lato);
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.speakers-information em {
+    color: var(--orange);
+}
+
+.speakers-information hr {
+    width: 2.4rem;
+    border: .01rem solid var(--gray-light);
+    background-color: var(--gray-light);
+    border-radius: 10%;
 }
