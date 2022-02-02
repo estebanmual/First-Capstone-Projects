@@ -1,0 +1,199 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'cocogoose-regular';
+    src: url('/resources/font/cocogoose/Cocogoose-Pro-trial.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Prompt:wght@500&display=swap');
+
+:root {
+    --coco-regular: 'cocogoose-regular';
+    --prompt-medium: 'Prompt', sans-serif;
+    --lato: 'Lato', sans-serif;
+    --gray-dark: #272a31;
+    --orange: #ec5242;
+    --orange-light: hsla(6, 82%, 59%, 0.637);
+    --gray-light: #d3d3d3;
+    --gray-lighter: #f5f5f5;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    padding: 2.5rem;
+    background-image: url(./images/background-header-about-mobile.svg);
+    background-repeat: no-repeat;
+    background-position-y: 10%;
+    background-size: 100% auto;
+    background-color: var(--gray-lighter);
+}
+
+.button-menu {
+    position: fixed;
+    background: none;
+    border: none;
+    z-index: 2;
+}
+
+.flaticon-menu {
+    font-size: 4rem;
+}
+
+.flaticon-close {
+    font-size: 3rem;
+}
+
+.topnav {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    margin: 0 0;
+    padding: auto auto;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: var(--orange);
+    display: none;
+}
+
+.menu {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.menu li {
+    text-align: center;
+    padding: .5rem;
+    list-style: none;
+}
+
+.menu a {
+    font-family: var(--lato);
+    color: white;
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+#visible {
+    display: block;
+    z-index: 1;
+}
+
+.scrollable {
+    overflow-y: visible;
+}
+  
+.notScrollable {
+    overflow-y: hidden;
+}
+
+.about-greeting {
+    margin: 1rem 0;
+    font-family: var(--lato);
+    color: var(--orange);
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.header-about {
+    margin-top: 6rem;
+}
+
+.title-header-about {
+    font-family: var(--coco-regular);
+    color: var(--orange);
+    font-size: 3.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.title-header-about span {
+    font-family: var(--prompt-medium);
+    font-weight: 1000;
+}
+
+.text-header-about {
+    background-color: white;
+    text-align: center;
+    font-family: var(--lato);
+    padding: 1rem;
+    font-size: 1.5rem;   
+    font-weight: 400;
+    margin-top: 3rem;
+}
+
+.text-header-about strong {
+    color: var(--orange);
+}
+
+.contact-header-about {
+    margin: 1.5rem auto;
+    font-family: var(--lato);
+    font-size: 1rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+.contact-header-about strong{
+    font-size: 1rem;
+    font-family: var(--lato);
+    font-weight: 900;
+}
+
+.contact-header-about a {
+    color: var(--gray-dark);
+}
+
+.crypto-con-logo {
+    background-color: white;
+    margin: 0 -2.5rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.title-crypto-con-logo {
+    font-family: var(--coco-regular);
+    font-weight: 200;
+    color: var(--gray-dark);
+    font-size: 2rem;
+}
+
+.crypto-con-logo hr {
+    color: var(--orange);
+    width: 4rem;
+    height: .3rem;
+    margin: 0 auto;
+    border-color: var(--orange);
+    background-color: var(--orange);
+    border-radius: 20%;
+}
+
+.text-crypto-con-logo {
+    margin: 1.5rem 20% 2rem 20%;
+    font-family: var(--lato);
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+.text-crypto-con-logo strong {
+    color: var(--orange);
+}
+
+.crypto-con-logo img {
+    border: .1rem solid var(--gray-light);
+    margin-bottom: 2rem;
+}
