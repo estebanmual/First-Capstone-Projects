@@ -233,3 +233,44 @@ body {
 .past-crypto-con img:last-child {
     margin-bottom: 2.5rem;
 }
+
+.partners-crypto-con {
+    background-color: var(--gray-dark);
+    margin: 0 -2.5rem;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.images-partners-crypto-con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.partners-crypto-con img {
+    width: 30%;
+    height: auto;
+}
+
+.title-partners-crypto-con {
+    font-family: var(--coco-regular);
+    font-weight: 200;
+    color: white;
+    font-size: 2rem;
+}
+
+.partners-crypto-con hr {
+    color: var(--orange);
+    width: 4rem;
+    height: .3rem;
+    margin: 0 auto;
+    border-color: var(--orange);
+    background-color: var(--orange);
+    border-radius: 20%;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+    justify-content: center;
+}
