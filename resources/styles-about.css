@@ -29,7 +29,7 @@ html {
 }
 
 body {
-    padding: 2.5rem;
+    padding: 2.5rem 2.5rem 0 2.5rem;
     background-image: url(./images/background-header-about-mobile.svg);
     background-repeat: no-repeat;
     background-position-y: 10%;
@@ -196,4 +196,40 @@ body {
 .crypto-con-logo img {
     border: .1rem solid var(--gray-light);
     margin-bottom: 2rem;
+}
+
+.past-crypto-con {
+    text-align: center;
+    background-color: white;
+    margin: 0 -2.5rem;
+}
+
+.title-past-crypto-con {
+    font-family: var(--coco-regular);
+    font-weight: 200;
+    color: var(--gray-dark);
+    font-size: 2rem;
+}
+
+.past-crypto-con hr {
+    color: var(--orange);
+    width: 4rem;
+    height: .3rem;
+    margin: 0 auto;
+    border-color: var(--orange);
+    background-color: var(--orange);
+    border-radius: 20%;
+}
+
+.images-past-crypto-con {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.5rem;
+}
+.past-crypto-con img {
+    margin-top: 2.5rem;
+}
+
+.past-crypto-con img:last-child {
+    margin-bottom: 2.5rem;
 }
