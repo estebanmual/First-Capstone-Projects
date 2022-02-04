@@ -7,284 +7,454 @@
 }
 
 @font-face {
-    font-family: 'cocogoose-regular';
-    src: url('/resources/font/cocogoose/Cocogoose-Pro-trial.ttf');
+  font-family: "cocogoose-regular";
+  src: url("/resources/font/cocogoose/Cocogoose-Pro-trial.ttf");
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Prompt:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Prompt:wght@500&display=swap");
 
 :root {
-    --coco-regular: 'cocogoose-regular';
-    --prompt-medium: 'Prompt', sans-serif;
-    --lato: 'Lato', sans-serif;
-    --gray-dark: #272a31;
-    --orange: #ec5242;
-    --orange-light: hsla(6, 82%, 59%, 0.637);
-    --gray-light: #d3d3d3;
-    --gray-lighter: #f5f5f5;
+  --coco-regular: "cocogoose-regular";
+  --prompt-medium: "Prompt", sans-serif;
+  --lato: "Lato", sans-serif;
+  --gray-dark: #272a31;
+  --orange: #ec5242;
+  --orange-light: hsla(6, 82%, 59%, 0.637);
+  --gray-light: #d3d3d3;
+  --gray-lighter: #f5f5f5;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
-  
+
 body {
-    padding: 2.5rem;
-    background-image: url(./images/background-header-mobile.svg);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-color: var(--gray-lighter);
+  padding: 2.5rem 2.5rem 0 2.5rem;
+  background-image: url(./images/background-header-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: var(--gray-lighter);
 }
 
 .button-menu {
-    position: fixed;
-    background: none;
-    border: none;
-    z-index: 2;
+  position: fixed;
+  background: none;
+  border: none;
+  z-index: 2;
 }
 
 .flaticon-menu {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
 .flaticon-close {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .topnav {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    margin: 0 0;
-    padding: auto auto;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    background-color: var(--orange);
-    display: none;
+  height: 100%;
+  width: -webkit-fill-available;
+  position: sticky;
+  margin: -2.5rem -2.5rem;
+  padding: 10rem auto;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: var(--orange);
+  display: none;
 }
 
 .menu {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  height: -webkit-fill-available;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .menu li {
-    text-align: center;
-    padding: .5rem;
-    list-style: none;
+  text-align: center;
+  padding: 0.5rem;
+  list-style: none;
 }
 
 .menu a {
-    font-family: var(--lato);
-    color: white;
-    text-decoration: none;
-    font-size: 2.5rem;
-    font-weight: 800;
+  font-family: var(--lato);
+  color: white;
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-weight: 800;
 }
 
 #visible {
-    display: block;
-    z-index: 1;
+  display: block;
+  z-index: 1;
 }
 
 .scrollable {
-    overflow-y: visible;
+  overflow-y: visible;
 }
-  
+
 .notScrollable {
-    overflow-y: hidden;
+  overflow-y: hidden;
 }
 
 .home-greeting {
-    margin: 1rem 0;
-    font-family: var(--lato);
-    color: var(--orange);
-    font-size: 2rem;
-    font-weight: 400;
+  margin: 1rem 0;
+  font-family: var(--lato);
+  color: var(--orange);
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 .header-home {
-    margin-top: 6rem;
+  margin-top: 6rem;
 }
 
 .title-header-home {
-    font-family: var(--coco-regular);
-    color: var(--orange);
-    font-size: 3.5rem;
-    font-weight: 400;
-
+  font-family: var(--coco-regular);
+  color: var(--orange);
+  font-size: 3.5rem;
+  font-weight: 400;
 }
 
 .title-header-home span {
-    font-family: var(--prompt-medium);
-    font-weight: 1000;
+  font-family: var(--prompt-medium);
+  font-weight: 1000;
 }
 
 .text-header-home {
-    background-color: var(--gray-lighter);
-    font-family: var(--lato);
-    border: .75rem solid white;
-    padding: 1rem;
-    font-size: 1.5rem;   
-    font-weight: 400;
+  background-color: var(--gray-lighter);
+  font-family: var(--lato);
+  border: 0.75rem solid white;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 .text-header-home strong {
-    color: var(--orange);
+  color: var(--orange);
 }
 
 .date-header-home {
-    margin-top: 1.5rem;
-    font-family: var(--prompt-medium);
-    font-size: 2rem;
-    font-weight: 900;
+  margin-top: 1.5rem;
+  font-family: var(--prompt-medium);
+  font-size: 2rem;
+  font-weight: 900;
 }
 
 .date-header-home span {
-    font-size: 1rem;
-    font-family: var(--lato);
-    font-weight: 400;
+  font-size: 1rem;
+  font-family: var(--lato);
+  font-weight: 400;
 }
 
 .main-program-home {
-    background-color: var(--gray-dark);
-    margin: 2rem -2.5rem 0 -2.5rem;
-    text-align: center;
-    padding: 2.5rem 2.5rem 0 2.5rem ;
-    background-image: url(icons/mycollection/blockchain.svg);
-    background-size: 2.5rem;
+  background-color: var(--gray-dark);
+  margin: 2rem -2.5rem 0 -2.5rem;
+  text-align: center;
+  padding: 2.5rem 2.5rem 0 2.5rem;
+  background-image: url(icons/mycollection/blockchain.svg);
+  background-size: 2.5rem;
 }
 
 .title-main-program-home {
-    font-family: var(--coco-regular);
-    font-weight: 200;
-    color: white;
-    font-size: 2rem;
+  font-family: var(--coco-regular);
+  font-weight: 200;
+  color: white;
+  font-size: 2rem;
 }
 
 .main-program-home hr {
-    color: var(--orange);
-    width: 4rem;
-    height: .3rem;
-    margin: 0 auto;
-    border-color: var(--orange);
-    background-color: var(--orange);
-    border-radius: 20%;
+  color: var(--orange);
+  width: 4rem;
+  height: 0.3rem;
+  margin: 0 auto;
+  border-color: var(--orange);
+  background-color: var(--orange);
+  border-radius: 20%;
 }
 
 .programs-main-program-home {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    text-align: left;
-    margin-top: 2rem;
-    gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  text-align: left;
+  margin-top: 2rem;
+  gap: 1.5rem;
 }
 
 .programs-main-program-home li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 7.5rem;
-    padding: .3rem .6rem;
-    background-color: #d3d3d31c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7.5rem;
+  padding: 0.3rem 0.6rem;
+  background-color: #d3d3d31c;
 }
 
 .programs-main-program-home li i {
-    font-size: 4.5rem;
-    color: white;
+  font-size: 4.5rem;
+  color: white;
 }
 
 .programs-main-program-home li h3 {
-    font-family: var(--coco-regular);
-    font-weight: 400;
-    font-size: 1.2rem;
-    color: var(--orange);
+  font-family: var(--coco-regular);
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--orange);
 }
 
 .programs-main-program-home li p {
-    font-family: var(--lato);
-    font-size: 1.2rem;
-    width: 13.4rem;
-    font-weight: 200;
-    color: white;
+  font-family: var(--lato);
+  font-size: 1.2rem;
+  width: 13.4rem;
+  font-weight: 200;
+  color: white;
 }
 
 .btn-main-program-home {
-    background-color: var(--orange);
-    color: white;
-    font-family: var(--lato);
-    font-size: 1.6rem;
-    font-weight: bold;
-    border: none;
-    margin: 2rem auto;
-    padding: 1.5rem 1rem;
+  background-color: var(--orange);
+  color: white;
+  font-family: var(--lato);
+  font-size: 1.6rem;
+  font-weight: bold;
+  border: none;
+  margin: 2rem auto;
+  padding: 1.5rem 1rem;
 }
 
 .featured-speakers {
-    margin: 0 -2.5rem 2.5rem -2.5rem;
-    text-align: center;
-    padding: 2.5rem 2.5rem 0 2.5rem ;
-    background-color: white;
+  margin: 0 -2.5rem 2.5rem -2.5rem;
+  text-align: center;
+  padding: 2.5rem 2.5rem 0 2.5rem;
+  background-color: white;
 }
 
 .title-featured-speakers {
-    font-family: var(--coco-regular);
-    font-weight: 200;
-    color: var(--gray-dark);
-    font-size: 2rem;
+  font-family: var(--coco-regular);
+  font-weight: 200;
+  color: var(--gray-dark);
+  font-size: 2rem;
 }
 
 .featured-speakers > hr {
+  color: var(--orange);
+  width: 4rem;
+  height: 0.3rem;
+  margin: 0 auto;
+  border-color: var(--orange);
+  background-color: var(--orange);
+  border-radius: 20%;
+}
+
+.speakers-list {
+  margin-bottom: 2.5rem;
+}
+
+.speakers-list li {
+  display: flex;
+  margin: 3rem 0;
+}
+
+.speakers-information {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  text-align: left;
+  justify-content: space-evenly;
+}
+
+.speakers-information h3 {
+  font-family: var(--coco-regular);
+  font-weight: 100;
+  font-size: 1.3rem;
+}
+
+.speakers-information p {
+  font-family: var(--lato);
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+.speakers-information em {
+  color: var(--orange);
+}
+
+.speakers-information hr {
+  width: 2.4rem;
+  border: 0.01rem solid var(--gray-light);
+  background-color: var(--gray-light);
+  border-radius: 10%;
+}
+
+.first-line,
+.link-main-program-home,
+.partners-crypto-con,
+footer,
+.topnav img{
+    display: none;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 100%;
+  }
+
+  .topnav img, .partners-crypto-con, .first-line{
+    display: block;
+  }
+  .button-menu {
+    display: none;
+  }
+
+  .topnav {
+    display: flex;
+    height: 7%;
+    padding: auto auto;
+    background-color: white;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .menu {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1rem;
+  }
+
+  .menu li {
+    padding: 0 1.5rem;
+  }
+
+  .menu a {
+    font-size: 1rem;
+    color: var(--gray-dark);
+  }
+
+  .main-program-home {
+    padding: 2.5rem;
+  }
+  .programs-main-program-home {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0.1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .programs-main-program-home li {
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .programs-main-program-home li p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .programs-main-program-home li i {
+    font-size: 3rem;
+  }
+
+  .btn-main-program-home {
+    display: none;
+  }
+
+  .link-main-program-home {
+    padding: 5rem auto;
+    color: white;
+    font-family: var(--lato);
+    font-weight: 400;
+  }
+
+  .featured-speakers {
+    margin-bottom: 0;
+  }
+
+  .speakers-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .speakers-list li {
+    width: 50%;
+  }
+
+  .speakers-list img {
+    width: 30%;
+  }
+
+  .speakers-information {
+    width: 50%;
+  }
+
+  .partners-crypto-con {
+    background-color: var(--gray-dark);
+    margin: 0 -2.5rem;
+    text-align: center;
+    padding-top: 1.5rem;
+  }
+
+  .images-partners-crypto-con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .partners-crypto-con img {
+    width: 10%;
+    margin: 2rem;
+  }
+
+  .title-partners-crypto-con {
+    font-family: var(--coco-regular);
+    font-weight: 200;
+    color: white;
+    font-size: 2rem;
+  }
+
+  .partners-crypto-con hr {
     color: var(--orange);
     width: 4rem;
-    height: .3rem;
+    height: 0.3rem;
     margin: 0 auto;
     border-color: var(--orange);
     background-color: var(--orange);
     border-radius: 20%;
-}
+  }
 
-.speakers-list {
-    margin-bottom: 2.5rem;
-}
-
-.speakers-list li {
+  footer {
     display: flex;
-    margin: 3rem 0
-}
+    align-items: center;
+    padding: 2rem 0;
+    justify-content: center;
+  }
 
-.speakers-information {
+  .first-line {
     display: flex;
-    flex-direction: column;
-    margin-left: 1rem;
-    text-align: left;
-    justify-content: space-evenly;
-}
+    justify-content: flex-end;
+    background-color: var(--gray-dark);
+    margin: -2.5rem -2.5rem 0 -2.5rem;
+    padding: .5rem 2.5rem .5rem 0;
+    gap: 3rem;
+  }
 
-.speakers-information h3 {
-    font-family: var(--coco-regular);
-    font-weight: 100;
-    font-size: 1.3rem;
-}
-
-.speakers-information p {
+  .first-line p,
+  .first-line i {
+    color: white;
+    font-size: 1.2rem;
     font-family: var(--lato);
-    font-weight: 100;
-    font-size: 1rem;
+    font-weight: 200;
+  }
 }
 
-.speakers-information em {
-    color: var(--orange);
-}
-
-.speakers-information hr {
-    width: 2.4rem;
-    border: .01rem solid var(--gray-light);
-    background-color: var(--gray-light);
-    border-radius: 10%;
-}
