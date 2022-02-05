@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <font id="flaticon" horiz-adv-x="300">
+    <font-face font-family="flaticon"
+      units-per-em="300" ascent="300"
+      descent="0" />
+    <missing-glyph horiz-adv-x="0" />
+    <glyph glyph-name="001-menu"
+      unicode="&#xF101;"
+      horiz-adv-x="300" d="M48.75 236.3625H251.25V198.8625H48.75zM48.75 165.1125H251.25V127.6125H48.75zM48.75 97.6125H251.25V60.1125H48.75z" />
+    <glyph glyph-name="002-close"
+      unicode="&#xF102;"
+      horiz-adv-x="300" d="M300 258.0002671872913L257.9995640628406 300L149.9996484377747 192.0000843749341L41.9997328127087 300L0 258.0002671872913L107.9999156250659 150.0003515622253L0 42.0004359371594L41.9997328127087 0L149.9996484377747 107.9999156250659L257.9995640628406 0L300 42.0004359371594L192.0000843749341 150.0003515622253z" />
+  </font>
+</defs>
+</svg>
