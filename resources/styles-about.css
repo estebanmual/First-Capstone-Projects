@@ -52,19 +52,17 @@ body {
   font-size: 3rem;
 }
 
-    .topnav {
-        height: 100%;
-        width: -webkit-fill-available;
-        position: sticky;
-        margin: -2.5rem -2.5rem;
-        padding: 10rem auto;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        background-color: var(--orange);
-        display: none;
-      }
-
+.topnav {
+  height: 100%;
+  width: 100vw;
+  position: sticky;
+  margin: -2.5rem -2.5rem;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: var(--orange);
+  display: none;
+}
 
 .menu {
   height: 100%;
@@ -227,8 +225,18 @@ body {
   flex-direction: column;
   padding: 0 2.5rem;
 }
+
 .past-crypto-con img {
   margin-top: 2.5rem;
+}
+
+.partners-crypto-con img {
+  width: 30%;
+  height: auto;
+}
+
+.topnav img {
+  display: none;
 }
 
 .past-crypto-con img:last-child {
@@ -246,10 +254,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-}
-.partners-crypto-con img {
-  width: 30%;
-  height: auto;
 }
 
 .title-partners-crypto-con {
@@ -276,8 +280,9 @@ footer {
   justify-content: center;
 }
 
-.first-line, .logo2, .topnav img{
-    display: none;
+.first-line,
+.logo2 {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -285,9 +290,11 @@ footer {
     font-size: 100%;
   }
 
-  .topnav img, .first-line{
+  .topnav img,
+  .first-line {
     display: block;
   }
+
   .button-menu {
     display: none;
   }
@@ -295,11 +302,10 @@ footer {
   .topnav {
     display: flex;
     height: 7%;
-    padding: auto auto;
     background-color: white;
     align-items: center;
     margin-top: 0;
-    width: -webkit-fill-available;
+    width: 100vw;
   }
 
   .menu {
@@ -323,8 +329,12 @@ footer {
     justify-content: flex-end;
     background-color: var(--gray-dark);
     margin: -2.5rem -2.5rem 0 -2.5rem;
-    padding: .5rem 2.5rem .5rem 0;
+    padding: 0.5rem 2.5rem 0.5rem 0;
     gap: 3rem;
+  }
+
+  footer p {
+    color: white;
   }
 
   .first-line p,
@@ -336,47 +346,44 @@ footer {
   }
 
   .text-header-about {
-      margin-right: 6rem;
-      margin-left: 6rem;
+    margin-right: 6rem;
+    margin-left: 6rem;
   }
 
   .crypto-con-logo img {
-      width: 60%;
+    width: 60%;
   }
 
   .images-past-crypto-con {
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap: 1rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
   }
 
   .images-past-crypto-con img {
-      width: 40%;
+    width: 40%;
   }
 
   .past-crypto-con img {
-      margin-bottom: 2.5rem
+    margin-bottom: 2.5rem;
   }
 
   .partners-crypto-con {
-      display: none;
+    display: none;
   }
 
   footer {
-      background-color: var(--gray-dark);
-      gap: 2rem;
-margin: 0 -2.5rem;
-  }
-
-  footer p {
-      color: white;
+    background-color: var(--gray-dark);
+    gap: 2rem;
+    margin: 0 -2.5rem;
   }
 
   .logo1 {
-     display: none;
+    display: none;
   }
+
   .logo2 {
-      display: block;
+    display: block;
   }
 }
