@@ -59,12 +59,12 @@ function getFeaturedSpeakers(speaker) {
 
 function loadSpeakers() {
   const speakersContainer = document.querySelector('.speakers-list');
-  for (let i = 0; i < featuredSpeakers.length; i += 1) {
-    const speakerLoad = getFeaturedSpeakers(featuredSpeakers[i]);
+  featuredSpeakers.forEach( (speaker) => {
+    const speakerLoad = getFeaturedSpeakers(speaker);
     const speakerCard = document.createElement('li');
     speakerCard.innerHTML = speakerLoad;
     speakersContainer.appendChild(speakerCard);
-  }
+  });
 }
 
 loadSpeakers();
