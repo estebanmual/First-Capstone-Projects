@@ -4,7 +4,7 @@
 
 > Here I made a web page for a non existing crypto-con. 
 
-[Project Mockup](mockup-readme.jpg)
+![screenshot](mockup-readme.jpg)
 
 
 ## Built With
