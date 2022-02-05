@@ -1,19 +1,21 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# CRYPTO-CON 2022
 
-> Description the project.
+> Here I made a web page for a non existing crypto-con. 
+
+[Project Mockup](mockup-readme.jpg)
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+-CSS
+-HTML
+-JavaScript
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](#) [Updating Link when merge with main branch]
 
 
 ## Getting Started
@@ -40,17 +42,11 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Author1**
+👤 **Edgar Esteban Muñoz Alba**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@esteban_mual](https://github.com/esteban_mual)
+- Twitter: [@esteban_mual](https://twitter.com/Esteban_mual)
+- LinkedIn: [Esteban Muñoz Alba](https://linkedin.com/in/esteban_mual)
 
 ## 🤝 Contributing
 
@@ -64,9 +60,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Cindy Shin's design
+- SciComm [Link](https://www.scicommcon.org/)
+- Aspen Global Congress on Scientific Thinking & Action [Link](https://www.aspeninstitute.org/programs/science-society/global-science-congress/)
 
 ## 📝 License
 

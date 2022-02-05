@@ -52,11 +52,10 @@ body {
 }
 
 .topnav {
-  height: 100%;
-  width: -webkit-fill-available;
+  height: auto;
+  width: 100vw;
   position: sticky;
   margin: -2.5rem -2.5rem;
-  padding: 10rem auto;
   top: 0;
   left: 0;
   z-index: 1;
@@ -65,7 +64,7 @@ body {
 }
 
 .menu {
-  height: -webkit-fill-available;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -198,11 +197,23 @@ body {
   color: white;
 }
 
+.speakers-information h3 {
+  font-family: var(--coco-regular);
+  font-weight: 100;
+  font-size: 1.3rem;
+}
+
 .programs-main-program-home li h3 {
   font-family: var(--coco-regular);
   font-weight: 400;
   font-size: 1.2rem;
   color: var(--orange);
+}
+
+.speakers-information p {
+  font-family: var(--lato);
+  font-weight: 100;
+  font-size: 1rem;
 }
 
 .programs-main-program-home li p {
@@ -265,18 +276,6 @@ body {
   justify-content: space-evenly;
 }
 
-.speakers-information h3 {
-  font-family: var(--coco-regular);
-  font-weight: 100;
-  font-size: 1.3rem;
-}
-
-.speakers-information p {
-  font-family: var(--lato);
-  font-weight: 100;
-  font-size: 1rem;
-}
-
 .speakers-information em {
   color: var(--orange);
 }
@@ -292,8 +291,8 @@ body {
 .link-main-program-home,
 .partners-crypto-con,
 footer,
-.topnav img{
-    display: none;
+.topnav img {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -301,17 +300,19 @@ footer,
     font-size: 100%;
   }
 
-  .topnav img, .partners-crypto-con, .first-line{
+  .topnav img,
+  .partners-crypto-con,
+  .first-line {
     display: block;
   }
+
   .button-menu {
     display: none;
   }
 
   .topnav {
     display: flex;
-    height: 7%;
-    padding: auto auto;
+    height: 3rem;
     background-color: white;
     align-items: center;
     margin-top: 0;
@@ -336,6 +337,7 @@ footer,
   .main-program-home {
     padding: 2.5rem;
   }
+
   .programs-main-program-home {
     flex-direction: row;
     flex-wrap: wrap;
@@ -353,6 +355,14 @@ footer,
     padding: 1rem 0;
   }
 
+  .first-line p,
+  .first-line i {
+    color: white;
+    font-size: 1.2rem;
+    font-family: var(--lato);
+    font-weight: 200;
+  }
+
   .programs-main-program-home li p {
     font-size: 1rem;
     text-align: center;
@@ -367,7 +377,7 @@ footer,
   }
 
   .link-main-program-home {
-    padding: 5rem auto;
+    display: block;
     color: white;
     font-family: var(--lato);
     font-weight: 400;
@@ -411,6 +421,7 @@ footer,
     flex-wrap: wrap;
     justify-content: center;
   }
+
   .partners-crypto-con img {
     width: 10%;
     margin: 2rem;
@@ -445,16 +456,7 @@ footer,
     justify-content: flex-end;
     background-color: var(--gray-dark);
     margin: -2.5rem -2.5rem 0 -2.5rem;
-    padding: .5rem 2.5rem .5rem 0;
+    padding: 0.5rem 2.5rem 0.5rem 0;
     gap: 3rem;
   }
-
-  .first-line p,
-  .first-line i {
-    color: white;
-    font-size: 1.2rem;
-    font-family: var(--lato);
-    font-weight: 200;
-  }
 }
-
