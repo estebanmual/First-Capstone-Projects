@@ -1,16 +1,20 @@
 @font-face {
   font-family: "flaticon";
   src:
-    url("./flaticon.ttf?a9c1243d48e24e36e238a80ef2a4de1b") format("truetype"),
-    url("./flaticon.woff?a9c1243d48e24e36e238a80ef2a4de1b") format("woff"),
-    url("./flaticon.woff2?a9c1243d48e24e36e238a80ef2a4de1b") format("woff2"),
-    url("./flaticon.eot?a9c1243d48e24e36e238a80ef2a4de1b#iefix") format("embedded-opentype"),
-    url("./flaticon.svg?a9c1243d48e24e36e238a80ef2a4de1b#flaticon") format("svg");
+    url("./flaticon.ttf?e6260ca42ac2476d612a537f74426da0") format("truetype"),
+    url("./flaticon.woff?e6260ca42ac2476d612a537f74426da0") format("woff"),
+    url("./flaticon.woff2?e6260ca42ac2476d612a537f74426da0") format("woff2"),
+    url("./flaticon.eot?e6260ca42ac2476d612a537f74426da0#iefix") format("embedded-opentype"),
+    url("./flaticon.svg?e6260ca42ac2476d612a537f74426da0#flaticon") format("svg");
+}
+
+:root {
+  --flaticon: "flaticon";
 }
 
 i[class^="flaticon-"]::before,
 i[class*=" flaticon-"]::before {
-  font-family: flaticon !important;
+  font-family: var(--flaticon);
   font-style: normal;
   font-weight: normal !important;
   font-variant: normal;
@@ -20,38 +24,10 @@ i[class*=" flaticon-"]::before {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.flaticon-presentation::before {
+.flaticon-menu::before {
   content: "\f101";
 }
 
-.flaticon-puzzle::before {
-  content: "\f102";
-}
-
-.flaticon-network::before {
-  content: "\f103";
-}
-
-.flaticon-lecture::before {
-  content: "\f104";
-}
-
-.flaticon-chat::before {
-  content: "\f105";
-}
-
-.flaticon-twitter::before {
-  content: "\f106";
-}
-
-.flaticon-facebook-app-symbol::before {
-  content: "\f107";
-}
-
-.flaticon-menu::before {
-  content: "\f108";
-}
-
 .flaticon-close::before {
-  content: "\f109";
+  content: "\f102";
 }

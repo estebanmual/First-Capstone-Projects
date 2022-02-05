@@ -41,14 +41,15 @@ body {
   background: none;
   border: none;
   z-index: 2;
-}
-
-.flaticon-menu {
   font-size: 4rem;
 }
 
-.flaticon-close {
-  font-size: 3rem;
+.button-menu p {
+  background-image: url(resources/icons/menu.svg);
+}
+
+.x-button {
+  display: none;
 }
 
 .topnav {
@@ -295,6 +296,11 @@ footer,
   display: none;
 }
 
+.programs-main-program-home img {
+  width: 6rem;
+  height: auto;
+}
+
 @media (min-width: 768px) {
   html {
     font-size: 100%;
@@ -306,8 +312,19 @@ footer,
     display: block;
   }
 
+  .topnav img {
+    width: 10rem;
+    height: auto;
+  }
+
   .button-menu {
     display: none;
+  }
+
+  .icon-twitter,
+  .icon-facebook {
+    width: 1.5rem;
+    height: auto;
   }
 
   .topnav {
@@ -320,18 +337,24 @@ footer,
 
   .menu {
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     align-items: center;
-    padding-right: 1rem;
+    padding-right: 0;
   }
 
   .menu li {
-    padding: 0 1.5rem;
+    padding: 0 0;
   }
 
   .menu a {
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: var(--gray-dark);
+  }
+
+  .menu .cc-campaign {
+    color: #ec5242;
+    border: 3px solid var(--orange);
+    padding: 0.3rem;
   }
 
   .main-program-home {
