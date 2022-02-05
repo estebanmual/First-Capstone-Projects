@@ -313,7 +313,7 @@ footer {
 
   .topnav {
     display: flex;
-    height: 7%;
+    height: 3rem;
     background-color: white;
     align-items: center;
     margin-top: 0;
